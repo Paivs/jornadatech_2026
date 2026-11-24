@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171313">
+  <meta name="description" content="De 1 a 4 de dezembro, conheça os projetos dos alunos de Desenvolvimento de Sistemas do SENAI São Caetano do Sul.">
+  <title>Jornada Tecnológica 2026 | SENAI São Caetano do Sul</title>
+  <link rel="stylesheet" href="./site.css">
+  <script src="./motion.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 10-8 10S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/></symbol>
+    <symbol id="icon-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3m-3 0h6"/></symbol>
+    <symbol id="icon-vote" viewBox="0 0 24 24"><path d="m8 7 3 3 5-5M5 14h14l2 3v4H3v-4l2-3Zm2 3h10"/></symbol>
+    <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8 14-2 7 6-3 6 3-2-7"/></symbol>
+    <symbol id="icon-team" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2m2-15a3 3 0 0 1 0 6m4 9v-2a4 4 0 0 0-3-4"/></symbol>
+  </svg>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-surface">
+      <div class="wrap header-inner">
+        <a href="#inicio" class="brand flex items-center gap-4" aria-label="SENAI São Caetano do Sul, início">
+          <img src="./assets/senai.png" width="116" height="30" alt="SENAI">
+          <span>Armando de Arruda Pereira</span>
+        </a>
+        <nav aria-label="Navegação principal" class="header-nav">
+          <a href="#sobre">Evento</a>
+          <a href="#dinamica">Dinâmica</a>
+          <a class="header-cta" href="#programacao"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-calendar"/></svg>Programação</a>
+        </nav>
+      </div>
+      <span class="header-scroll-line" aria-hidden="true"></span>
+    </div>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <div class="event-opening">
+      <section class="hero" id="inicio" aria-labelledby="titulo">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+          <div class="orb" aria-hidden="true">
+            <canvas id="orb" width="620" height="620"></canvas>
+            <div class="orb-scan"></div>
+          </div>
+          <div class="hero-copy">
+            <p class="eyebrow hero-item"><span class="signal"></span> 1, 2, 3 e 4 DE DEZEMBRO DE 2026</p>
+            <h1 id="titulo" class="hero-item">Jornada<br><span>Tecnológica</span></h1>
+            <p class="hero-description hero-item">Os alunos de Desenvolvimento de Sistemas do SENAI apresentam as soluções de negócio que criaram e implementaram.</p>
+            <div class="flex flex-wrap items-center gap-3 hero-item">
+              <a class="button primary" href="#programacao">Ver programação</a>
+              <a class="button secondary" href="#projetos">Conhecer os projetos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="event-bar">
+        <dl class="wrap grid grid-cols-1 sm:grid-cols-3">
+          <div class="fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-code"/></svg><div><dt>Projetos integradores</dt><dd>40 apresentações</dd></div></div>
+          <div class="fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-clock"/></svg><div><dt>Manhã e tarde</dt><dd>8h–11h e 14h–17h</dd></div></div>
+          <div class="fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pin"/></svg><div><dt>SENAI</dt><dd>Auditório</dd></div></div>
+        </dl>
+      </div>
+    </div>
+    <section id="programacao" class="section schedule" aria-labelledby="programacao-titulo">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>DEZEMBRO DE 2026</p>
+        <h2 id="programacao-titulo" data-reveal>Programação</h2>
+        <p class="section-lead" data-reveal>Consulte as turmas e a quantidade de grupos de cada turno. A ordem das apresentações será sorteada.</p>
+        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="day" data-reveal>
+      <p>TERÇA-FEIRA</p>
+      <h3><time datetime="2026-12-01">01 <span>DEZ</span></time></h3>
+      <div class="session">
+    <h4>Manhã <span>8h às 11h</span></h4>
+    <ul aria-label="Turmas da manhã"><li><span>2IDA-SS</span><span>3 grupos</span></li><li><span>3MD</span><span>2 grupos</span></li></ul>
+  </div>
+      <div class="session">
+    <h4>Tarde <span>14h às 17h</span></h4>
+    <ul aria-label="Turmas da tarde"><li><span>2TD2</span><span>1 grupo</span></li><li><span>3TD</span><span>4 grupos</span></li></ul>
+  </div>
+    </article>
+<article class="day" data-reveal>
+      <p>QUARTA-FEIRA</p>
+      <h3><time datetime="2026-12-02">02 <span>DEZ</span></time></h3>
+      <div class="session">
+    <h4>Manhã <span>8h às 11h</span></h4>
+    <ul aria-label="Turmas da manhã"><li><span>1IDA-SS</span><span>2 grupos</span></li><li><span>2MD</span><span>3 grupos</span></li></ul>
+  </div>
+      <div class="session">
+    <h4>Tarde <span>14h às 17h</span></h4>
+    <ul aria-label="Turmas da tarde"><li><span>1IDA-SS</span><span>2 grupos</span></li><li><span>2TD1</span><span>2 grupos</span></li><li><span>2TD2</span><span>1 grupo</span></li></ul>
+  </div>
+    </article>
+<article class="day" data-reveal>
+      <p>QUINTA-FEIRA</p>
+      <h3><time datetime="2026-12-03">03 <span>DEZ</span></time></h3>
+      <div class="session">
+    <h4>Manhã <span>8h às 11h</span></h4>
+    <ul aria-label="Turmas da manhã"><li><span>2IDA-SS</span><span>2 grupos</span></li><li><span>3MD</span><span>2 grupos</span></li><li><span>2TD2</span><span>1 grupo</span></li></ul>
+  </div>
+      <div class="session">
+    <h4>Tarde <span>14h às 17h</span></h4>
+    <ul aria-label="Turmas da tarde"><li><span>2TD2</span><span>1 grupo</span></li><li><span>3TD</span><span>4 grupos</span></li></ul>
+  </div>
+    </article>
+<article class="day" data-reveal>
+      <p>SEXTA-FEIRA</p>
+      <h3><time datetime="2026-12-04">04 <span>DEZ</span></time></h3>
+      <div class="session">
+    <h4>Manhã <span>8h às 11h</span></h4>
+    <ul aria-label="Turmas da manhã"><li><span>1IDA-SS</span><span>3 grupos</span></li><li><span>2MD</span><span>1 grupo</span></li><li><span>3MD</span><span>1 grupo</span></li></ul>
+  </div>
+      <div class="session">
+    <h4>Tarde <span>14h às 17h</span></h4>
+    <ul aria-label="Turmas da tarde"><li><span>1IDA-SS</span><span>1 grupo</span></li><li><span>2TD1</span><span>3 grupos</span></li><li><span>2TD2</span><span>1 grupo</span></li></ul>
+  </div>
+    </article>
+        </div>
+        <p class="section-copy mt-4">A programação pode mudar conforme a necessidade.</p>
+        <p class="schedule-visit"><a href="#visitas">Como solicitar uma visita</a></p>
+      </div>
+    </section>
+    <section id="sobre" class="wrap section" aria-labelledby="sobre-titulo">
+      <div data-reveal class="mb-4">
+        <p class="eyebrow" id="sobre-titulo">Jornada Tecnológica</p>
+      </div>
+      <div data-reveal class="section-copy about-copy">
+        <p>Ao longo de quatro dias, as turmas do <strong>2º, 3º e 4º semestres</strong>, incluindo os formandos deste semestre, mostram como transformaram desafios em projetos de software.</p>
+        <p>As equipes apresentam suas propostas no auditório e depois demonstram como construíram as soluções, passando pelo código, pelas integrações e pelos desafios do desenvolvimento.</p>
+      </div>
+    </section>
+    <section id="projetos" class="wrap section" aria-labelledby="projetos-titulo">
+      <h2 id="projetos-titulo" data-reveal>Projetos por turma</h2>
+      <p class="section-lead" data-reveal>Conheça as propostas e os integrantes de cada equipe.</p>
+      <div class="catalog">
+        <details class="project-class-group" open>
+      <summary><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-team"/></svg>1IDA-SS <span class="semester">2º semestre</span></span><span class="project-count">8 grupos</span></summary>
+      <div class="project-grid"><article class="project" data-reveal>
+    <p class="project-class">1IDA-SS</p>
+    <h4>CineClub</h4>
+    <p>Catálogo de filmes e séries com avaliações, listas e recomendações.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Nivia</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Barbara, Alice, Gabriela</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">1IDA-SS</p>
+    <h4>EnergyMonitor</h4>
+    <p>Monitoramento do consumo de energia por sala ou setor, com metas de economia e histórico de leituras.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Guilherme</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Pedro, Daniel, Gustavo Miguel</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">1IDA-SS</p>
+    <h4>EventNow</h4>
+    <p>Criação de eventos, controle de vagas e inscrições.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Kauan</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Diego, Enzo, Geovanna</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">1IDA-SS</p>
+    <h4>FoodCampus</h4>
+    <p>Pedidos para cantinas ou lanchonetes, com cardápio, carrinho e acompanhamento do pedido.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Ana Laura</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Isabelly, Nathalia, Bianca</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">1IDA-SS</p>
+    <h4>GameHub</h4>
+    <p>Organização de campeonatos de videogame, com equipes, partidas e ranking.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Caua</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Douglas, Yago, Samuel</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">1IDA-SS</p>
+    <h4>MakerLab</h4>
+    <p>Gestão de laboratório maker, com reserva de máquinas e ferramentas, projetos e registro de uso.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Gustavo Ribeiro</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Logan, Gustavo Kumasaka, Henry</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">1IDA-SS</p>
+    <h4>PetConnect</h4>
+    <p>Plataforma de adoção de animais com acompanhamento do interesse dos candidatos.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Felipe Vieira</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Felipe Oliveira, Matheus Duran, Lorena</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">1IDA-SS</p>
+    <h4>StudyMatch</h4>
+    <p>Conexão entre estudantes para formação de grupos de estudo.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Yasmin</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Giovana, Maria Maia, Letícia</dd></div>
+    </dl>
+  </article></div>
+    </details>
+<details class="project-class-group" open>
+      <summary><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-team"/></svg>2MD <span class="semester">2º semestre</span></span><span class="project-count">4 grupos</span></summary>
+      <div class="project-grid"><article class="project" data-reveal>
+    <p class="project-class">2MD</p>
+    <h4>LabSchedule</h4>
+    <p>Agendamento de laboratórios técnicos, com turmas, equipamentos, horários e responsáveis.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Guilherme Silva</dd></div>
+      <div><dt>Demais integrantes</dt><dd>A confirmar</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2MD</p>
+    <h4>RoboParts</h4>
+    <p>Catálogo e controle de componentes de robótica, com consulta de peças, empréstimos e reposição de estoque.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Felipe Santos</dd></div>
+      <div><dt>Demais integrantes</dt><dd>A confirmar</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2MD</p>
+    <h4>SmartParking</h4>
+    <p>Controle de entradas, saídas, vagas disponíveis e histórico de estacionamento.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Diego Corrêa</dd></div>
+      <div><dt>Demais integrantes</dt><dd>A confirmar</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2MD</p>
+    <h4>TechRental</h4>
+    <p>Controle de empréstimos de notebooks, kits eletrônicos, ferramentas e equipamentos tecnológicos.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Cauã Lima</dd></div>
+      <div><dt>Demais integrantes</dt><dd>A confirmar</dd></div>
+    </dl>
+  </article></div>
+    </details>
+<details class="project-class-group" open>
+      <summary><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-team"/></svg>2TD1 <span class="semester">2º semestre</span></span><span class="project-count">5 grupos</span></summary>
+      <div class="project-grid"><article class="project" data-reveal>
+    <p class="project-class">2TD1</p>
+    <h4>HomeServices</h4>
+    <p>Solicitação de serviços domésticos, com consulta de profissionais, orçamentos e avaliações.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Kauã</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Ryan, Lennon, Yago</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2TD1</p>
+    <h4>RoboParts</h4>
+    <p>Catálogo e controle de componentes de robótica, com consulta de peças, empréstimos e reposição de estoque.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Igor Susae</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Bryan, Lucas, Vitor, Miguel</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2TD1</p>
+    <h4>SchoolHelpDesk</h4>
+    <p>Registro e acompanhamento de solicitações de manutenção e suporte escolar.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Rafaela</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Fernando, Pedro, Davi</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2TD1</p>
+    <h4>SolarControl</h4>
+    <p>Acompanhamento de sistemas fotovoltaicos, com geração estimada, consumo e histórico de manutenção.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Fabio</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Gustavo Ananias, Henry, Igor Fazani, Henrique</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2TD1</p>
+    <h4>VolunteerConnect</h4>
+    <p>Conexão entre instituições, oportunidades e pessoas interessadas em voluntariado.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Enzo</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Nycolas, Nichollas, Antonio, Gustavo Fazani</dd></div>
+    </dl>
+  </article></div>
+    </details>
+<details class="project-class-group" open>
+      <summary><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-team"/></svg>2TD2 <span class="semester">2º semestre</span></span><span class="project-count">5 grupos</span></summary>
+      <div class="project-grid"><article class="project" data-reveal>
+    <p class="project-class">2TD2</p>
+    <h4>BeautySchedule</h4>
+    <p>Agenda para serviços de estética, com gestão de clientes, procedimentos e horários.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Emily</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Victor Sá, Guilherme, Bruno</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2TD2</p>
+    <h4>CarCare</h4>
+    <p>Controle de revisões, manutenções, veículos, serviços e lembretes.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Vinícius</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Max, Lucas, Raviel</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2TD2</p>
+    <h4>EcoCollect</h4>
+    <p>Cadastro de pontos de coleta seletiva, materiais aceitos e entregas realizadas.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Henrique</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Kaique, Rhian, Gabriel</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2TD2</p>
+    <h4>ElectroSafe</h4>
+    <p>Registro de inspeções elétricas e não conformidades em quadros e tomadas, com acompanhamento de correções.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Arthur</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Thiago, Matheus, Miguel</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2TD2</p>
+    <h4>FindIt</h4>
+    <p>Registro de objetos perdidos e encontrados, com localização e contato entre usuários.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Pedro</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Higor, Lívia, Nycolas, Victor Oliveira</dd></div>
+    </dl>
+  </article></div>
+    </details>
+<details class="project-class-group" open>
+      <summary><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-team"/></svg>3MD <span class="semester">3º semestre</span></span><span class="project-count">5 grupos</span></summary>
+      <div class="project-grid"><article class="project" data-reveal>
+    <p class="project-class">3MD</p>
+    <h4>EduTrack Pro</h4>
+    <p>Gestão de alunos, professores, notas, frequência e cursos, com alertas e relatórios.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Rafael Yu</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Karla, Gabriel Araújo, Vitória</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3MD</p>
+    <h4>FactoryFlow</h4>
+    <p>Acompanhamento de ordens de produção, etapas, máquinas, paradas e indicadores de produtividade.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Daniel</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Arthur, Thiago P., Derick</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3MD</p>
+    <h4>LogiTrack</h4>
+    <p>Gestão de entregas, motoristas, rotas, status e indicadores.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Samuel</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Heitor, Juliana, Thiago Xavier, Matheus Souza</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3MD</p>
+    <h4>PredictMaint</h4>
+    <p>Manutenção preditiva de máquinas com medições, alertas, ordens de serviço e indicadores.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Gustavo</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Leonardo, Gabriel E., Luiz Fillipe, Nicole</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3MD</p>
+    <h4>TechAssist Pro</h4>
+    <p>Gestão de assistência técnica de equipamentos, do diagnóstico e orçamento ao reparo e rastreamento do serviço.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Filipe</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Igor B., Igor M., Matheus R., Italo</dd></div>
+    </dl>
+  </article></div>
+    </details>
+<details class="project-class-group" open>
+      <summary><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-team"/></svg>3TD <span class="semester">3º semestre</span></span><span class="project-count">8 grupos</span></summary>
+      <div class="project-grid"><article class="project" data-reveal>
+    <p class="project-class">3TD</p>
+    <h4>EnergyGrid</h4>
+    <p>Monitoramento de consumo elétrico e demanda por setor, com alertas de sobrecarga, gráficos e relatórios.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Guilherme Guedes</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Gustavo Emanuel, Silas, Breno</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3TD</p>
+    <h4>EventFlow</h4>
+    <p>Gestão de eventos, inscrições, check-in por QR Code e certificados, com painel de acompanhamento.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Eloah</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Andrei, Beatriz, Lívia</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3TD</p>
+    <h4>IndustrialAlert</h4>
+    <p>Central de ocorrências industriais com prioridades, responsáveis, evidências e análise de recorrência.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Izadora</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Pedro Henrique, Raphael, Fernando</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3TD</p>
+    <h4>JobMatch</h4>
+    <p>Plataforma de currículos, empresas, vagas e candidaturas com filtros de busca.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Gustavo Novaes</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Nayra, Giovanni, Gustavo Gonçales</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3TD</p>
+    <h4>RoboLab Manager</h4>
+    <p>Gestão de robôs, bancadas didáticas, componentes, programação, testes, falhas e histórico de uso.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Felipe</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Samuel, Guilherme de Paula, Miguel</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3TD</p>
+    <h4>SafeCity</h4>
+    <p>Registro geolocalizado e acompanhamento de problemas urbanos.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Enzo</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Danilo, Jessé, Rai</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3TD</p>
+    <h4>SmartBuilding</h4>
+    <p>Supervisão de iluminação, energia, temperatura, acessos e ocorrências em um edifício inteligente.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Kiara</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Vinicius, André, Ana Julia</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">3TD</p>
+    <h4>WaterControl</h4>
+    <p>Monitoramento de reservatórios, consumo de água e vazamentos, com alertas e histórico de leituras.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Nicolas</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Lucas, Vitor, Gustavo Ramalho</dd></div>
+    </dl>
+  </article></div>
+    </details>
+<details class="project-class-group" open>
+      <summary><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-team"/></svg>2IDA-SS <span class="semester">4º semestre</span></span><span class="project-count">5 grupos</span></summary>
+      <div class="project-grid"><article class="project" data-reveal>
+    <p class="project-class">2IDA-SS</p>
+    <h4>CineAstra</h4>
+    <p>Soluções de streaming e presença digital para uma rede de cinemas.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Kevin</dd></div>
+      <div><dt>Demais integrantes</dt><dd>A confirmar</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2IDA-SS</p>
+    <h4>ConectaSus</h4>
+    <p>Unificação de dados de UBS e UPAs de regiões selecionadas.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Sarah</dd></div>
+      <div><dt>Demais integrantes</dt><dd>A confirmar</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2IDA-SS</p>
+    <h4>Greenly</h4>
+    <p>Monitoramento e gestão do cultivo em estufas, com sensores IoT, controle de produção, custos, qualidade dos lotes e comunicação da equipe.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Leticia</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Isabelly, Juliana, Maria Stefanato, Veronica, Vitória</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2IDA-SS</p>
+    <h4>Visora</h4>
+    <p>Plataforma de gestão e inteligência financeira empresarial.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Luiza</dd></div>
+      <div><dt>Demais integrantes</dt><dd>Fernanda Matsudo, Leonardo, Marco, Nicolly, Rafael Mondim</dd></div>
+    </dl>
+  </article>
+<article class="project" data-reveal>
+    <p class="project-class">2IDA-SS</p>
+    <h4>Wisen</h4>
+    <p>Plataforma educacional que combina inteligência e curadoria de fontes confiáveis para contextualizar informações e criar mapas mentais.</p>
+    <dl>
+      <div><dt>Gerente de projetos</dt><dd>Fernanda</dd></div>
+      <div><dt>Demais integrantes</dt><dd>A confirmar</dd></div>
+    </dl>
+  </article></div>
+    </details>
+      </div>
+    </section>
+    <section id="dinamica" class="wrap section dynamics" aria-labelledby="dinamica-titulo">
+      <p class="eyebrow" data-reveal>COMO FUNCIONA</p>
+      <h2 id="dinamica-titulo" data-reveal>Pitch &amp; Código</h2>
+      <div class="grid gap-3 md:grid-cols-3 mt-8">
+        <article class="step" data-reveal><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-mic"/></svg><h3>Pitch no auditório</h3><p>Cada grupo tem 15 minutos para apresentar sua proposta de negócio e fazer uma demonstração rápida, em um formato inspirado no Shark Tank. As perguntas da banca de professores vêm depois e têm duração variável.</p></article>
+        <article class="step" data-reveal><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-vote"/></svg><h3>Votação da plateia</h3><p>O formulário de votação será apresentado na hora. A plateia escolhe entre os projetos que assistiu na sessão.</p></article>
+        <article class="step" data-reveal><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-code"/></svg><h3>Demonstração técnica</h3><p>Depois dos pitches, as equipes mostram o código, as integrações e os desafios do projeto ao lado do auditório, antes da cantina.</p></article>
+      </div>
+    </section>
+    <div class="event-details">
+      <div class="wrap details-stack">
+        <section id="premiacao" class="section" aria-labelledby="premiacao-titulo" data-reveal>
+          <h2 class="icon-heading" id="premiacao-titulo"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-award"/></svg>Premiação</h2>
+          <div class="section-copy">
+            <p>Haverá <strong>um grupo vencedor por turma</strong> e <strong>um grande vencedor da Jornada</strong>. As equipes vencedoras recebem medalhas e certificado de ganhador, em reconhecimento pelo trabalho.</p>
+            <p>A premiação leva em conta a votação da plateia, a qualidade da apresentação, a desenvoltura, a entrega técnica, o domínio do projeto e as respostas à banca. A nota de cada aluno segue os critérios da disciplina comunicados pelo professor em sala.</p>
+            <p>Os anúncios acontecem em <strong>4 de dezembro</strong>, no fim dos turnos da manhã e da tarde. O turno do anúncio do grande vencedor será definido no dia.</p>
+          </div>
+        </section>
+        <section id="visitas" class="section" aria-labelledby="visitas-titulo" data-reveal>
+          <h2 class="icon-heading" id="visitas-titulo"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-pin"/></svg>Como visitar</h2>
+          <div class="section-copy">
+            <p>Alunos e professores do SENAI devem solicitar a visita até <strong><time datetime="2026-11-30">30 de novembro</time></strong>, tanto para assistir aos pitches no auditório quanto para visitar as demonstrações técnicas.</p>
+            <p><strong>Alunos</strong> devem avisar o professor da turma. <strong>Professores</strong> devem falar diretamente com Gustavo Paiva, Rodrigo Alvarez, William Reis, Letícia Aquino ou Mauro Vera.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap flex flex-wrap items-center justify-between gap-4 py-6">
+      <p>Jornada Tecnológica 2026 · SENAI São Caetano do Sul</p>
+      <a href="#inicio">Voltar ao início</a>
+    </div>
+  </footer>
+</body>
+</html>
